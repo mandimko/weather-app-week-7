@@ -65,8 +65,13 @@ footer {
 .weather-app-temperature {
   text-align: right;
   display: block;
-  font-size: 88px;
+  font-size: 60px;
   font-weight: bold;
-  line-height: 88px;
-  color: rgb(175, 20, 46);
+  line-height: 60px;
+  color: rgb(102, 32, 168);
+}
+
+.icon {
+  width: 88px;
+  height: 88px;
 }
