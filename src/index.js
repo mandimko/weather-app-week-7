@@ -11,13 +11,13 @@ function updateWeatherInfo(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 
-  cityElement.innerHTML = response.data.city;
-  timeElement.innerHTML = formatDate(date);
-  descriptionElement.innerHTML = response.data.condition.description;
-  humidityElement.innerHTML = `${response.data.wind.speed}km/h`;
-  temperatureElement.innerHTML = Math.round(temperature);
+  cityElement.innerHTML =response.data.city;
+  timeElement.innerHTML =formatDate(date);
+  descriptionElement.innerHTML =response.data.condition.description;
+  humidityElement.innerHTML =`${response.data.wind.speed}km/h`;
+  temperatureElement.innerHTML =Math.round(temperature);
 
-  getForecast(response.data.city);
+  getForecast(response.data.city)
 }
 
 function formatDate(date) {
@@ -79,7 +79,7 @@ function displayForecast(response) {
           <div class="weather-forecast-day"</div>
             <div class="weather-forecast-date">${formatDay(day.time)}</div>
             <div class="weather-forecast-icon" id="forecast"><img src="${
-              day.condition.icon.url
+              day.condition.icon_url
             };
             <div class="weather-forecast-icon"></div>
             <div class="weather-forecast-temperatures"><strong>${Math.round(

@@ -65,13 +65,36 @@ footer {
 .weather-app-temperature {
   text-align: left;
   display: block;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 60px;
-  color: white;
+  line-height: 30px;
+  color: rgb(10, 9, 9);
 }
 
 .icon {
   width: 88px;
   height: 88px;
 }
+
+.weather-forecast {
+  margin-top: 25px;
+  justify-content: space-around;
+}
+
+.weather-forecast-day {
+  text-align: left;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.weather-forecast-temperatures {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(155, 72, 72);
+}
+
+.weather-forecast-icon {
+  width: 80%;
+  display: block;
+}
+
